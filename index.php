@@ -1,3 +1,7 @@
+<?php
+    require_once "services/initialization.php";
+    $_SESSION['current_page'] = "index";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
