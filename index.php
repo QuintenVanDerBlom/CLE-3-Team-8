@@ -1,6 +1,8 @@
 <?php
     require_once "services/initialization.php";
     $_SESSION['current_page'] = "index";
+
+    var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html lang="en">

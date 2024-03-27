@@ -13,7 +13,7 @@ if(isset($_POST['submit'])) {
     // If data valid
     if (empty($errors)) {
         // SELECT the user from the database, based on the email address.
-        $loginQuery = "SELECT * FROM users where mail_adres = '$email'";
+        $loginQuery = "SELECT * FROM users where email = '$email'";
         $result = mysqli_query($db, $loginQuery) or die('error: ' . mysqli_error($db));
 
         // check if the user exists
@@ -68,71 +68,41 @@ if(isset($_POST['submit'])) {
     <title>Login</title>
 </head>
 <body>
-    <nav class="navbar">
-        <img class="icon-image" src="includes/images/Peitsman_logo.png">
-        <a href="producten.php"><span>Producten</span></a>
-        <a href="index.php"><span>Home</span></a>
-        <a href="preorder.php"><span>Reserveer</span></a>
-        <a href="contact.php"><span>Contact</span></a>
-        <a class="current" href="login.php"><span>Log in</span></a>
-    </nav>
 
-    <div class="profile-container">
-        <a class="profile-icon" href="profiel.php">
-            <img class="profile-icon" src="includes/images/icon.png">
-        </a>
-    </div>
-    <div class="line"></div>
     
-    <section id="formContainer">
-        <h2 class="title">Inloggen</h2>
-        <div class="box">
-
-            <div class="profile-container-2">
-                <a class="profile-icon-2" href="profiel.php">
-                    <img class="profile-icon-2" src="includes/images/icon.png">
-                </a>
-            </div>
+    <section id="form-container">
+        <h1 id="login-title">Inloggen</h1>
 
             <form  action="" method="post">
                 <div id="errorEmail">
                     <p> <?= $errors['email'] ?? ''?> </p>
                 </div>
 
-                <section class="formItem" id="email-Section">
-                    <input class="form-input" id="email" type="email" name="email" placeholder="E-mail" required/>
+                <section id="email-Section">
+                    <input id="email" type="email" name="email" placeholder="Email" required/>
 
                     <div id="errorPassword">
                         <p> <?= $errors['password'] ?? ''?> </p>
                     </div>
                 </section>
 
-                <section class="formItem" id="password-Section">
-                    <input class="form-input" id="password" type="password" name="password" placeholder="Wachtwoord" required/>
+                <section id="password-Section">
+                    <input id="password" type="password" name="password" placeholder="Password" required/>
 
-                    <div id="errorPassword">
+                    <div id="error-password">
                         <p> <?= $errors['password'] ?? ''?> </p>
                     </div>
                 </section>
 
                 <section id="submit">
-                    <button class="login_button" id="submitButton" type="submit" name="submit">Login</button>
+                    <button id="submit-button" type="submit" name="submit">Login</button>
                 </section>
 
-                <div class="registerLink">
+                <section>
                     <a href="register.php">Ik heb nog geen account</a>
-                </div>
- 
+                </section>
             </form>
-        </div>
     </section>
-    <footer>
-        <div class="belangrijk">
-            <p>&copy; 2024 Peitsman.com | alle rechten voorbehouden</p>
-        </div>
-        <div class="meuk">
-            <p><a href="Cookiebeleid.html">Cookiebeleid</a> | <a href="Algemene_voorwaarden.html">Algemene voorwaarden</a></p>
-        </div>
-    </footer>
+
 </body>
 </html>
