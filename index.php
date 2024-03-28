@@ -24,7 +24,7 @@
             <a href="pages/help.php"><img src="img/1200px-Icon-round-Question_mark.svg.png" alt="informatie"></a>
         </div>
         <div class="navigation-box">
-            <a href="pages/"><img src="img/store.jpg" alt="Winkels"></a>
+            <a href="pages/stores.php"><img src="img/store.jpg" alt="Winkels"></a>
         </div>
         <div class="navigation-box">
             <a href="pages/store.php"><img src="img/location.png" alt="locatie"></a>
