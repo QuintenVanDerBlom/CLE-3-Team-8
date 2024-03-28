@@ -1,5 +1,41 @@
 * {
-    max-width: 360px
+    max-width: 360px;
+}
+
+.header-image {
+    border: black solid 2px;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.home-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow flex items to wrap to a new line */
+    max-width: 360px; /* Example max-width for the container */
+}
+
+.footer {
+    height: 20px;
+    color: white;
+    background-color: black;
+    text-align: left;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.navigation-box {
+    min-height: 100px;
+    min-width: 100px;
+    border: 1px black solid;
+    margin: 5px; /* Optional: Add some margin between the boxes */
+}
+
+.navigation-box img {
+    max-height: 100px;
+    max-width: 100px;
 }
 
 /*register & login page*/
