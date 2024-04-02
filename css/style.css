@@ -10,6 +10,32 @@
     text-align: center;
 }
 
+.page-image-section {
+    display: flex;
+    justify-content: center;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow flex items to wrap to a new line */
+    max-width: 360px; /* Example max-width for the container */
+}
+
+.productBox {
+
+}
+
+.product {
+    min-width: 100%;
+}
+
+.page-image {
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
 .home-navigation {
     display: flex;
     justify-content: center;
