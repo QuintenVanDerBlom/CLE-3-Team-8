@@ -10,6 +10,32 @@
     text-align: center;
 }
 
+.page-image-section {
+    display: flex;
+    justify-content: center;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow flex items to wrap to a new line */
+    max-width: 360px; /* Example max-width for the container */
+}
+
+.productBox {
+
+}
+
+.product {
+    min-width: 100%;
+}
+
+.page-image {
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
 .home-navigation {
     display: flex;
     justify-content: center;
@@ -65,4 +91,62 @@
     height: 30px;
     border: 3px solid #28ef87;
     border-radius: 5px;
+}
+
+
+/* Help Page */
+.help-row {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+/*register & login page*/
+#register-title{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #28ef87;
+    color: white;
+}
+
+#register-form-container{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form-input{
+    width: 50vw;
+    height: 30px;
+    border: 3px solid #28ef87;
+    border-radius: 5px;
+}
+
+/* stores page */
+
+.store-name-comtainer{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.store-icon{
+    width: 25px;
+    height: 25px;
+}
+
+/*settings*/
+
+#settings-icon{
+    height: 100px;
+    width: 100px;
 }
