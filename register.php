@@ -4,8 +4,8 @@ if(isset($_POST['submit'])) {
     require_once "includes/database.php";
 
     // Get form data
-    $firstName = $_POST['firstName'];
-    $lastName = $_POST['lastName'];
+    $firstName = $_POST['first-name'];
+    $lastName = $_POST['last-name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $dateOfBirth = $_POST['DoB'];
