@@ -30,6 +30,11 @@
     min-width: 100%;
 }
 
+.delete-icon {
+    height: 30px;
+    width: 30px;
+}
+
 .page-image {
     border: none;
     width: 100px;
@@ -168,4 +173,9 @@
     flex-direction: row;
     border-bottom: black 1px solid;
     border-top: black 1px solid;
+}
+
+/*Store-Navigation*/
+.store-nav {
+    height: 300px;
 }
