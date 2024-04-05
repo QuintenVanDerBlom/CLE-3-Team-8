@@ -22,5 +22,14 @@
 <section id="product-list" class="product-list">
 
 </section>
+<section>
+    <a href="products.php"> lijstaanpassen </a>
+</section>
+<section>
+    <a href="store-navigation.php"> volgende </a>
+</section>
+<section>
+    <a href="stores.php"> vorige </a>
+</section>
 </body>
 </html>

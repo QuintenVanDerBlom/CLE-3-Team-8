@@ -11,6 +11,10 @@
 </head>
 <body>
 
+
+    <section>
+        <a href="shoppinglist.php">terug naar lijst </a>
+    </section>
 </body>
 </html>
 

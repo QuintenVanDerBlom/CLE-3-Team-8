@@ -22,5 +22,9 @@
 <section id="product-list" class="product-list">
 
 </section>
+
+<section>
+    <a href="shoppinglist.php">terug naar lijst </a>
+</section>
 </body>
 </html>

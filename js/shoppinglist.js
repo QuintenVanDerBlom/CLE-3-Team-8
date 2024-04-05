@@ -1,7 +1,7 @@
 window.addEventListener("load", init)
 localStorage.setItem('selectedStore', '1');
 const selectedStore = localStorage.getItem('selectedStore');
-const storeURL = `http://localhost/CLE%203/CLE-3-Team-8/services/webservice/index.php/GetPart?id=${selectedStore}`;
+const storeURL = `http://localhost/CLE-3-Team-8/services/webservice/index.php/GetPart?id=${selectedStore}`;
 let productList;
 let localStorageArray = localStorage.getItem("shoppingList")
 let shoppingArray = JSON.parse(localStorageArray)

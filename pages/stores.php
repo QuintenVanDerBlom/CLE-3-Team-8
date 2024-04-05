@@ -14,6 +14,9 @@
     <h1 class="page-title">Stores</h1>
     <section id="stores-container">
     </section>
+    <section>
+        <a href="shoppinglist.php"> volgende </a>
+    </section>
 
 
     <footer class="footer">
