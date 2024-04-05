@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
 }
+/* products */
 
 .product-list {
     display: flex;
@@ -167,7 +168,7 @@ body {
 }
 
 .header-image img {
-    width: 300px;
+    width: 250px;
     height: auto;
 }
 
