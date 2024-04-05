@@ -1,12 +1,13 @@
 window.addEventListener("load", init)
 localStorage.setItem('selectedStore', '1');
 const selectedStore = localStorage.getItem('selectedStore');
-const storeURL = `http://localhost/CLE-3-Team-8/services/webservice/index.php/GetPart?id=${selectedStore}`;
+const storeURL = `http://localhost/CLE-3-Team-8/services/webservice/index.php/GetPart?id=1`;
 let productList;
 let shoppingArray = [];
 
 
 function init() {
+    console.log(storeURL)
     ajaxCallHandler(storeURL, showStoreProducts)
     productList = document.getElementById('product-list');
     productList.addEventListener('change', productClickHandler)
