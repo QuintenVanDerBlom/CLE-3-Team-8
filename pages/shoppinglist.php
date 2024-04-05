@@ -29,7 +29,7 @@
     <a href="store-navigation.php"> volgende </a>
 </section>
 <section>
-    <a href="stores.php"> vorige </a>
+    <a href="../index.php"> vorige </a>
 </section>
 </body>
 </html>

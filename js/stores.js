@@ -40,7 +40,7 @@ function createStores(storeData){
         storeContainer.appendChild(storeNameContainer);
 
         let storeIcon = document.createElement('img');
-        storeIcon.src = '../img/store-icon.png';
+        storeIcon.src = 'img/store-icon.png';
         storeIcon.classList.add('store-icon');
         storeNameContainer.appendChild(storeIcon);
 

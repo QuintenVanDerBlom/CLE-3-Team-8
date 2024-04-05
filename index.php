@@ -15,9 +15,14 @@
 <section id="stores-container">
 </section>
 
+<section>
+    <a href="pages/shoppinglist.php">volgende</a>
+</section>
 
 <footer class="footer">
     <p>Privacy</p>
 </footer>
+
+
 </body>
 </html>
