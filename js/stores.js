@@ -55,7 +55,7 @@ function createStores(storeData){
 function selectStore(e) {
 
     //pak de winkel id
-    const storeCard = e.target.closest('.store-name-comtainer');
+    const storeCard = e.target.closest('.store-name-container');
     if (storeCard) {
         const selectedStoreId = storeCard.dataset.storeId;
 
@@ -70,11 +70,11 @@ function checkSelectedStore() {
     const selectedStoreId = localStorage.getItem("selectedStore");
 
     if (selectedStoreId) {
-        const selectedStore = document.querySelector(`.store-name-comtainer[data-store-id="${selectedStoreId}"]`);
+        const selectedStore = document.querySelector(`.store-name-container[data-store-id="${selectedStoreId}"]`);
 
         if (selectedStore) {
             // Remove 'selected-store' class from all stores
-            const allStores = document.querySelectorAll('.store-name-comtainer');
+            const allStores = document.querySelectorAll('.store-name-container');
             allStores.forEach(store => store.classList.remove('selected-store'));
 
             // Add 'selected-store' class to the selected store
