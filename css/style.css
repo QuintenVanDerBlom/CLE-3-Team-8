@@ -1,6 +1,4 @@
-* {
-    max-width: 360px;
-}
+
 
 
 
@@ -159,6 +157,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Headerafbeelding */
@@ -222,5 +224,11 @@ section a:hover {
 }
 
 .category{
-    margin: 20px
+    margin: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.category:hover{
+    background-color: #800080;
+    color: #fff;
 }
