@@ -219,3 +219,7 @@ section a:hover {
     background-color: #800080;
     color: #fff;
 }
+
+.category{
+    margin: 20px
+}
