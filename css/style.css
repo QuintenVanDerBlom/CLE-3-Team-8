@@ -181,11 +181,17 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.product{
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-right: 10px;
+
+}
+
 /* Lijst aanpassen en navigatie links */
 section {
     text-align: center;
-    margin-top: 20px;
-    margin: 10px
+    margin: 30px
 }
 
 section a {
