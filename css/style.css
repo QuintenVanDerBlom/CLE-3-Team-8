@@ -72,14 +72,12 @@
     max-width: 100px;
 }
 
-
-.form-item {
+/* Help Page */
+.help-row {
     display: flex;
+    justify-content: left;
     flex-direction: column;
 }
-
-
-
 
 /* stores page */
 
@@ -104,13 +102,6 @@
 .store-icon {
     width: 25px;
     height: 25px;
-}
-
-/*settings*/
-
-#settings-icon {
-    height: 100px;
-    width: 100px;
 }
 
 /* Help Page */
