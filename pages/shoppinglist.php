@@ -23,13 +23,13 @@
 
     </section>
     <section>
-        <a href="products.php"> lijst aanpassen </a>
-    </section>
-    <section>
         <a href="store-navigation.php"> volgende </a>
     </section>
     <section>
-        <a href="../index.php"> vorige </a>
+        <a href="products.php"> lijst aanpassen </a>
+    </section>
+    <section>
+        <a href="../index.php"> terug naar stores </a>
     </section>
 </body>
 </html>

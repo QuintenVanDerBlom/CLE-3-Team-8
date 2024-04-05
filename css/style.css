@@ -2,9 +2,7 @@
     max-width: 360px;
 }
 
-.header-image {
-    border: black solid 2px;
-}
+
 
 .page-title {
     text-align: center;
@@ -78,18 +76,16 @@
     max-width: 100px;
 }
 
-
-.form-item {
+/* Help Page */
+.help-row {
     display: flex;
+    justify-content: left;
     flex-direction: column;
 }
 
-
-
-
 /* stores page */
 
-.store-name-comtainer {
+.store-name-container {
     border: 1px solid black;
     display: flex;
     flex-direction: row;
@@ -126,13 +122,6 @@ a:hover {
 }
 
 
-
-/*settings*/
-
-#settings-icon {
-    height: 100px;
-    width: 100px;
-}
 
 /* Help Page */
 .help-row {
@@ -178,7 +167,7 @@ body {
 }
 
 .header-image img {
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 

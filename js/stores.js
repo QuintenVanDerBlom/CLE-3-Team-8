@@ -35,7 +35,7 @@ function createStores(storeData){
 
         //store name
         let storeNameContainer = document.createElement('section');
-        storeNameContainer.classList.add('store-name-comtainer');
+        storeNameContainer.classList.add('store-name-container');
         storeNameContainer.dataset.storeId = item.id;
         storeContainer.appendChild(storeNameContainer);
 
