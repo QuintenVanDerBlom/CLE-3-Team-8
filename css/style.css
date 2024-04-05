@@ -1,6 +1,4 @@
-* {
-    max-width: 360px;
-}
+
 
 
 
@@ -158,6 +156,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Headerafbeelding */
