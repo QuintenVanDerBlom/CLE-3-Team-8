@@ -169,23 +169,26 @@ body {
 }
 
 .page-image {
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 
 /* Productlijst sectie */
 .product-list {
-    padding: 20px;
+    padding-right: 50px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
     background-color: #fff;
-    margin: 20px auto;
-    width: 80%;
+    margin: 15px auto;
+    width: 500px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .product{
     padding: 10px;
     background-color: #f0f0f0;
-    margin-right: 10px;
+    margin-right: 1px;
 
 }
 
@@ -215,7 +218,7 @@ section a:hover {
     font-size: 25px;
     font-weight: bolder;
     margin: 20px;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 5px;
     padding: 5px;
     transition: background-color 0.3s, color 0.3s;
