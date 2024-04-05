@@ -78,70 +78,14 @@
     max-width: 100px;
 }
 
-/*register & login page*/
-#register-title {
-    display: flex;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    background-color: #28ef87;
-    color: white;
-}
-
-#register-form-container {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    margin-top: 3vh;
-}
 
 .form-item {
     display: flex;
     flex-direction: column;
 }
 
-.register-form-input {
-    width: 50vw;
-    height: 30px;
-    border: 3px solid #28ef87;
-    border-radius: 5px;
-}
 
-/* Help Page */
-.help-row {
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-}
 
-/*register & login page*/
-#register-title {
-    display: flex;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    background-color: #28ef87;
-    color: white;
-}
-
-#register-form-container {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    margin-top: 3vh;
-}
-
-.form-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.register-form-input {
-    width: 50vw;
-    height: 30px;
-    border: 3px solid #28ef87;
-    border-radius: 5px;
-}
 
 /* stores page */
 
@@ -200,4 +144,68 @@
 #map {
     height: 80vh;
     width: 100vw;
+}
+
+
+
+/* Algemene opmaak */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Headerafbeelding */
+.header-image {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-image img {
+    width: 200px;
+    height: auto;
+}
+
+/* Afbeeldingsectie op de pagina */
+.page-image-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page-image {
+    width: 150px;
+    height: auto;
+}
+
+/* Productlijst sectie */
+.product-list {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Lijst aanpassen en navigatie links */
+section {
+    text-align: center;
+    margin-top: 20px;
+    margin: 10px
+}
+
+section a {
+    text-decoration: none;
+    color: #800080;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #800080;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 20px
+}
+
+section a:hover {
+    background-color: #800080;
+    color: #fff;
 }
