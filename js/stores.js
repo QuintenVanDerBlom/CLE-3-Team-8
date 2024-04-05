@@ -47,6 +47,8 @@ function createStores(storeData){
         let storeTitle = document.createElement('h3');
         storeTitle.innerHTML = item.name;
         storeNameContainer.appendChild(storeTitle);
+
+        checkSelectedStore()
     }
 }
 
@@ -59,5 +61,24 @@ function selectStore(e) {
 
         //stuur store id naar local storage
         localStorage.setItem("store", selectedStoreId);
+    }
+
+    checkSelectedStore()
+}
+
+function checkSelectedStore() {
+    const selectedStoreId = localStorage.getItem("store");
+
+    if (selectedStoreId) {
+        const selectedStore = document.querySelector(`.store-name-comtainer[data-store-id="${selectedStoreId}"]`);
+
+        if (selectedStore) {
+            // Remove 'selected-store' class from all stores
+            const allStores = document.querySelectorAll('.store-name-comtainer');
+            allStores.forEach(store => store.classList.remove('selected-store'));
+
+            // Add 'selected-store' class to the selected store
+            selectedStore.classList.add('selected-store');
+        }
     }
 }
