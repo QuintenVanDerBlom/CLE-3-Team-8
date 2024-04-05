@@ -72,70 +72,14 @@
     max-width: 100px;
 }
 
-/*register & login page*/
-#register-title {
-    display: flex;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    background-color: #28ef87;
-    color: white;
-}
-
-#register-form-container {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    margin-top: 3vh;
-}
 
 .form-item {
     display: flex;
     flex-direction: column;
 }
 
-.register-form-input {
-    width: 50vw;
-    height: 30px;
-    border: 3px solid #28ef87;
-    border-radius: 5px;
-}
 
-/* Help Page */
-.help-row {
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-}
 
-/*register & login page*/
-#register-title {
-    display: flex;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    background-color: #28ef87;
-    color: white;
-}
-
-#register-form-container {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    margin-top: 3vh;
-}
-
-.form-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.register-form-input {
-    width: 50vw;
-    height: 30px;
-    border: 3px solid #28ef87;
-    border-radius: 5px;
-}
 
 /* stores page */
 
