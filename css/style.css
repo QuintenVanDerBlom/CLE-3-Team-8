@@ -174,18 +174,20 @@ body {
 
 /* Productlijst sectie */
 .product-list {
-    padding: 20px;
+
     background-color: #fff;
     margin: 20px auto;
     width: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.product{
-    padding: 10px;
+.product-list.product{
     background-color: #f0f0f0;
-    margin-right: 10px;
-
+    text-align: left;
+    flex-direction: row;
 }
 
 /* Lijst aanpassen en navigatie links */
