@@ -101,7 +101,6 @@
     border-radius: 5px;
 }
 
-
 /* Help Page */
 .help-row {
     display: flex;
@@ -178,4 +177,10 @@
 /*Store-Navigation*/
 .store-nav {
     height: 300px;
+}
+/* store maps */
+
+#map {
+    height: 80vh;
+    width: 100vw;
 }
