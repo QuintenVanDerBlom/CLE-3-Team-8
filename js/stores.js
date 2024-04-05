@@ -1,6 +1,6 @@
 window.addEventListener('load', init);
 
-const webAPI = 'http://localhost/cle-3-team-8/services/webservice/index.php';
+const webAPI = 'http://localhost/Periode%203/CLE-3-Team-8/services/webservice/index.php';
 let storeContainer;
 let storeData;
 
@@ -60,14 +60,14 @@ function selectStore(e) {
         const selectedStoreId = storeCard.dataset.storeId;
 
         //stuur store id naar local storage
-        localStorage.setItem("store", selectedStoreId);
+        localStorage.setItem("selectedStore", selectedStoreId);
     }
 
     checkSelectedStore()
 }
 
 function checkSelectedStore() {
-    const selectedStoreId = localStorage.getItem("store");
+    const selectedStoreId = localStorage.getItem("selectedStore");
 
     if (selectedStoreId) {
         const selectedStore = document.querySelector(`.store-name-comtainer[data-store-id="${selectedStoreId}"]`);

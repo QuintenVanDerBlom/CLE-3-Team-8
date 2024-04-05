@@ -6,9 +6,6 @@ let productList;
 let localStorageArray = localStorage.getItem("shoppingList")
 let shoppingArray = JSON.parse(localStorageArray)
 
-
-
-
 function init() {
     ajaxCallHandler(storeURL, showStoreProducts)
     productList = document.getElementById('product-list');
