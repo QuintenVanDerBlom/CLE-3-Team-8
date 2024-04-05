@@ -28,6 +28,12 @@
     min-width: 100%;
 }
 
+.category-list {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
 .delete-icon {
     height: 30px;
     width: 30px;
@@ -87,20 +93,35 @@
 
     &:hover{
         border: 3px solid purple;
+
     }
 }
+
 
 .selected-store{
     border: 3px solid purple;
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 .store-icon {
     width: 25px;
     height: 25px;
 }
+a{
+  font-size: ;
+}
+a:hover {
+    /* Voeg de stijlregels toe die je wilt toepassen wanneer de link wordt gehoverd */
+    color: purple; /* Voorbeeld: verander de tekstkleur naar paars */
+    text-decoration: underline; /* Onderstreep de tekst bij hover */
+    /* Voeg andere stijlregels toe zoals gewenst */
+    font-size: 2em;;
+}
+
+
 
 /* Help Page */
 .help-row {
@@ -170,11 +191,17 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.product{
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-right: 10px;
+
+}
+
 /* Lijst aanpassen en navigatie links */
 section {
     text-align: center;
-    margin-top: 20px;
-    margin: 10px
+    margin: 30px
 }
 
 section a {

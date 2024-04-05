@@ -16,6 +16,10 @@
 <section class="header-image">
     <img src="../img/result.brf.png" alt="Braille Image">
 </section>
+<section id="category-list" class="category-list">
+    <p id="Fruit">Fruit</p>
+    <p id="Zuivel">Zuivel</p>
+</section>
 <section class="page-image-section">
     <img class="page-image" src="../img/grocery.png" alt="shopping bag">
 </section>
