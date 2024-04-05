@@ -9,14 +9,14 @@
 </head>
 <body>
 <section class="header-image">
-    <img src="img/result.brf.png" alt="Braille Image">
+    <img src="img/easyfind.png" alt="logo">
 </section>
 <h1 class="page-title">Stores</h1>
 <section id="stores-container">
 </section>
 
 <section>
-    <a href="pages/shoppinglist.php">volgende</a>
+    <a href="pages/products.php">volgende</a>
 </section>
 
 <footer class="footer">

@@ -24,7 +24,10 @@
 </section>
 
 <section>
-    <a href="shoppinglist.php">terug naar lijst </a>
+    <a href="shoppinglist.php"> volgende </a>
+</section>
+<section>
+    <a href="../index.php"> vorige </a>
 </section>
 </body>
 </html>

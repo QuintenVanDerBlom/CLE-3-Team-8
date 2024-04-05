@@ -2,9 +2,7 @@
     max-width: 360px;
 }
 
-.header-image {
-    border: black solid 2px;
-}
+
 
 .page-title {
     text-align: center;
@@ -81,7 +79,7 @@
 
 /* stores page */
 
-.store-name-comtainer {
+.store-name-container {
     border: 1px solid black;
     display: flex;
     flex-direction: row;
@@ -148,7 +146,7 @@ body {
 }
 
 .header-image img {
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
