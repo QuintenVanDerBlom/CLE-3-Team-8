@@ -30,6 +30,12 @@
     min-width: 100%;
 }
 
+.category-list {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
 .delete-icon {
     height: 30px;
     width: 30px;
