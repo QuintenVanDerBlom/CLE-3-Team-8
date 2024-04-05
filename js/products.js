@@ -1,8 +1,9 @@
 window.addEventListener("load", init)
-localStorage.setItem('selectedStore', '1');
 const selectedStore = localStorage.getItem('selectedStore');
-const storeURL = `http://localhost/CLE-3-Team-8/services/webservice/index.php/GetPart?id=1`;
+const storeURL = `http://localhost/Periode%203/CLE-3-Team-8/services/webservice/index.php/GetPart?id=${selectedStore}`;
 let productList;
+let categoryList;
+let selectedCategory = "";
 let shoppingArray = [];
 
 
@@ -11,6 +12,8 @@ function init() {
     ajaxCallHandler(storeURL, showStoreProducts)
     productList = document.getElementById('product-list');
     productList.addEventListener('change', productClickHandler)
+    categoryList = document.getElementById('category-list')
+    categoryList.addEventListener("click", categoryHandler);
     shoppingArray = [];
 }
 
@@ -28,19 +31,35 @@ function ajaxCallHandler(url, successHandler) {
 
 function showStoreProducts(data) {
     productList = document.getElementById('product-list')
+    productList.innerHTML = "";
     for (let item of data.products) {
-        let product = document.createElement('div');
-        product.classList.add('product-list');
-        product.classList.add('product');
-        productList.appendChild(product);
-        let productText = document.createElement('p')
-        productText.innerHTML = item.naam;
-        product.appendChild(productText)
-        let productBox = document.createElement('input')
-        productBox.setAttribute('type', 'checkbox')
-        productBox.setAttribute('value', item.naam)
-        productBox.classList.add('productBox')
-        product.appendChild(productBox)
+        if (item.product_type === selectedCategory) {
+            let product = document.createElement('div');
+            product.classList.add('product-list');
+            product.classList.add('product');
+            productList.appendChild(product);
+            let productText = document.createElement('p')
+            productText.innerHTML = item.naam;
+            product.appendChild(productText)
+            let productBox = document.createElement('input')
+            productBox.setAttribute('type', 'checkbox')
+            productBox.setAttribute('value', item.naam)
+            productBox.classList.add('productBox')
+            product.appendChild(productBox)
+        } else if (selectedCategory === "") {
+            let product = document.createElement('div');
+            product.classList.add('product-list');
+            product.classList.add('product');
+            productList.appendChild(product);
+            let productText = document.createElement('p')
+            productText.innerHTML = item.naam;
+            product.appendChild(productText)
+            let productBox = document.createElement('input')
+            productBox.setAttribute('type', 'checkbox')
+            productBox.setAttribute('value', item.naam)
+            productBox.classList.add('productBox')
+            product.appendChild(productBox)
+        }
     }
     setCheckboxFromStorage(data)
 }
@@ -82,6 +101,12 @@ function removeProductFromList(e) {
     const storageHasProduct = shoppingArray.indexOf(productName);
     shoppingArray.splice(storageHasProduct, 1);
     localStorage.setItem('shoppingList', JSON.stringify(shoppingArray))
+}
+
+
+function categoryHandler(e) {
+    selectedCategory = e.target.id;
+    ajaxCallHandler(storeURL, showStoreProducts)
 }
 
 function ajaxErrorHandler() {
