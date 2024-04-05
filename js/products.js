@@ -35,12 +35,12 @@ function showStoreProducts(data) {
         productList.appendChild(product);
         let productText = document.createElement('p')
         productText.innerHTML = item.naam;
-        productList.appendChild(productText)
+        product.appendChild(productText)
         let productBox = document.createElement('input')
         productBox.setAttribute('type', 'checkbox')
         productBox.setAttribute('value', item.naam)
         productBox.classList.add('productBox')
-        productList.appendChild(productBox)
+        product.appendChild(productBox)
     }
     setCheckboxFromStorage(data)
 }

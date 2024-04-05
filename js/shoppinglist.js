@@ -38,7 +38,7 @@ function showStoreProducts(data) {
                 productList.appendChild(product);
                 let productText = document.createElement('p')
                 productText.innerHTML = item.naam;
-                productList.appendChild(productText)
+                product.appendChild(productText)
             }
         }
     }
