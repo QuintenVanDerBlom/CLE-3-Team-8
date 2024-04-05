@@ -1,16 +1,19 @@
 window.addEventListener("load", init)
 localStorage.setItem('selectedStore', '1');
 const selectedStore = localStorage.getItem('selectedStore');
-const storeURL = `http://localhost/Periode%203/CLE-3-Team-8/services/webservice/index.php/GetPart?id=${selectedStore}`;
+const storeURL = `http://localhost/CLE%203/CLE-3-Team-8/services/webservice/index.php/GetPart?id=${selectedStore}`;
 let productList;
-let shoppingArray = [];
+let localStorageArray = localStorage.getItem("shoppingList")
+let shoppingArray = JSON.parse(localStorageArray)
+
+
 
 
 function init() {
     ajaxCallHandler(storeURL, showStoreProducts)
     productList = document.getElementById('product-list');
-    productList.addEventListener('change', productClickHandler)
-    shoppingArray = [];
+    productList.addEventListener('click', removeProductFromList)
+
 }
 
 function ajaxCallHandler(url, successHandler) {
@@ -27,62 +30,22 @@ function ajaxCallHandler(url, successHandler) {
 
 function showStoreProducts(data) {
     productList = document.getElementById('product-list')
+    shoppingArray = localStorage.getItem("shoppingList")
+    let shoppingList = JSON.parse(shoppingArray)
     for (let item of data.products) {
-        let product = document.createElement('div');
-        product.classList.add('product-list');
-        product.classList.add('product');
-        productList.appendChild(product);
-        let productText = document.createElement('p')
-        productText.innerHTML = item.naam;
-        productList.appendChild(productText)
-        let productBox = document.createElement('input')
-        productBox.setAttribute('type', 'checkbox')
-        productBox.setAttribute('value', item.naam)
-        productBox.classList.add('productBox')
-        productList.appendChild(productBox)
-    }
-    setCheckboxFromStorage(data)
-}
-
-function setCheckboxFromStorage(data) {
-    if (localStorage.getItem('shoppingList') === null) {
-        return;
-    }
-    const localStorageArray = localStorage.getItem('shoppingList');
-    shoppingArray = JSON.parse(localStorageArray);
-    console.log(shoppingArray)
-
-    for (let item of shoppingArray) {
-        const checkboxStorage = document.querySelector(`.productBox[value='${item}']`)
-        checkboxStorage.checked = true;
+        for (let shoppingItem of shoppingList) {
+            if ( item.naam === shoppingItem) {
+                let product = document.createElement('div');
+                product.classList.add('product-list');
+                product.classList.add('product');
+                productList.appendChild(product);
+                let productText = document.createElement('p')
+                productText.innerHTML = item.naam;
+                productList.appendChild(productText)
+            }
+        }
     }
 }
-
-function productClickHandler (e) {
-    let clickedItem = e.target;
-    if (clickedItem.checked) {
-        addProductToList(e);
-    } else {
-        removeProductFromList(e);
-    }
-}
-
-function addProductToList(e) {
-    let clickedItem = e.target;
-
-    const productName = clickedItem.value;
-    shoppingArray.push(productName);
-    localStorage.setItem('shoppingList', JSON.stringify(shoppingArray))
-}
-
-function removeProductFromList(e) {
-    let clickedItem = e.target;
-    const productName = clickedItem.value;
-    const storageHasProduct = shoppingArray.indexOf(productName);
-    shoppingArray.splice(storageHasProduct, 1);
-    localStorage.setItem('shoppingList', JSON.stringify(shoppingArray))
-}
-
 function ajaxErrorHandler() {
 
 }
