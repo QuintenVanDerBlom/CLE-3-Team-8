@@ -74,17 +74,19 @@
 
 .store-name-container {
     border: 1px solid black;
-    border-radius: 6px;
+    border-radius: 13px;
+    border-width: thick;
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 30px;
-    padding: 10px 70px;
+    padding: 5px 100px;
     margin-bottom: 30px;
     gap: 20px;
 
     &:hover{
         border: 3px solid purple;
+        border-width: 8px;
 
     }
 }
@@ -202,11 +204,11 @@ section {
 }
 
 section a {
-    display: inline-block; /* Zorg ervoor dat de link een inline-block-element wordt */
+    display: inline-block;
     text-decoration: none;
     color: #800080;
     font-weight: bold;
-    padding: 20px 40px; /* Pas de padding toe op de link zelf */
+    padding: 20px 40px;
     border: 1px solid #800080;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
