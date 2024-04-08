@@ -1,6 +1,6 @@
 window.addEventListener('load', init);
 
-const webAPI = 'http://localhost/Periode%203/CLE-3-Team-8/services/webservice/index.php';
+const webAPI = 'http://localhost/CLE-3-Team-8/services/webservice/index.php';
 let storeContainer;
 let storeData;
 
