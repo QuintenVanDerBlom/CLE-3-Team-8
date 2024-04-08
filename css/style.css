@@ -85,40 +85,45 @@
 
 .store-name-container {
     border: 1px solid black;
+    border-radius: 13px;
+    border-width: thick;
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 30px;
+    padding: 5px 100px;
+    margin-bottom: 30px;
+    gap: 20px;
 
     &:hover{
         border: 3px solid purple;
+        border-width: 8px;
 
     }
 }
 
 
 .selected-store{
-    border: 3px solid purple;
+   background-color: purple;
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    color: white;
 }
 
 .store-icon {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+
 }
 a{
     font-size:1.5em ;
 }
 a:hover {
-    /* Voeg de stijlregels toe die je wilt toepassen wanneer de link wordt gehoverd */
-    color: purple; /* Voorbeeld: verander de tekstkleur naar paars */
-    text-decoration: underline; /* Onderstreep de tekst bij hover */
-    /* Voeg andere stijlregels toe zoals gewenst */
+    
+    color: purple; 
+    text-decoration: underline; 
     font-size: 2em;;
 }
-
 
 
 /* Help Page */
@@ -209,14 +214,16 @@ section {
 }
 
 section a {
+    display: inline-block;
     text-decoration: none;
     color: #800080;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 20px 40px;
     border: 1px solid #800080;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    margin: 20px
+    margin: 20px;
+    margin-bottom: 30px;
 }
 
 section a:hover {

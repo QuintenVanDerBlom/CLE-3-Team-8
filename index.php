@@ -21,7 +21,7 @@
 </section>
 
 <section>
-    <a href="pages/products.php">volgende</a>
+    <a href="pages/products.php">Volgende</a>
 </section>
 
 
