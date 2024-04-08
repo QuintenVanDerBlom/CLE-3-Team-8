@@ -15,7 +15,7 @@
 </head>
 <body>
 <section class="header-image">
-    <img src="../img/result.brf.png" alt="Braille Image">
+    <img src="img/easyfind.png" alt="logo">
 </section>
 <section class="page-image-section">
     <img class="page-image" src="../img/grocery.png" alt="shopping bag">
