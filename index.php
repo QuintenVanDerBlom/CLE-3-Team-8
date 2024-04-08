@@ -17,7 +17,7 @@
     <img src="img/easyfind.png" alt="logo">
 </section>
 <h1 class="page-title"> Selecteer uw winkel</h1>
-<section id="stores-container">
+<section class="" id="stores-container">
 </section>
 
 <section>

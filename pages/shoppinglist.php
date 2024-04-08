@@ -10,26 +10,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EasyFind</title>
     <script type="text/javascript" src="../js/shoppinglist.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css"
 </head>
 <body>
-    <section class="header-image">
-        <img src="../img/result.brf.png" alt="Braille Image">
-    </section>
-    <section class="page-image-section">
-        <img class="page-image" src="../img/grocery.png" alt="shopping bag">
-    </section>
-    <section id="product-list" class="product-list">
+<section class="header-image">
+    <img src="../img/result.brf.png" alt="Braille Image">
+</section>
+<section class="page-image-section">
+    <img class="page-image" src="../img/grocery.png" alt="shopping bag">
+</section>
+<section id="product-list" class="product-list">
 
-    </section>
-    <section>
-        <a href="store-navigation.php"> volgende </a>
-    </section>
-    <section>
-        <a href="products.php"> lijst aanpassen </a>
-    </section>
-    <section>
-        <a href="../index.php"> terug naar stores </a>
-    </section>
+</section>
+<section>
+    <a href="products.php"> lijstaanpassen </a>
+</section>
+<section>
+    <a href="store-navigation.php"> volgende </a>
+</section>
+<section>
+    <a href="../index.php"> vorige </a>
+</section>
 </body>
 </html>
