@@ -18,16 +18,35 @@
     /* Example max-width for the container */
 }
 
-.productBox {}
+.productBox {
+    width: 25px;
+    height: 25px;
+    accent-color: #800080;
+}
 
 .product {
     min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product p {
+    width: 50px;
 }
 
 .category-list {
     display: flex;
     justify-content: left;
     flex-direction: row;
+}
+
+#trashCan{
+    color: red;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .delete-icon {
@@ -199,14 +218,16 @@ section {
 }
 
 section a {
+    display: inline-block; /* Zorg ervoor dat de link een inline-block-element wordt */
     text-decoration: none;
     color: #800080;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 20px 40px; /* Pas de padding toe op de link zelf */
     border: 1px solid #800080;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    margin: 20px
+    margin: 20px;
+    margin-bottom: 30px;
 }
 
 section a:hover {

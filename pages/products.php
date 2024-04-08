@@ -22,6 +22,7 @@
 <section id="category-list" class="category-list">
     <p class="category"  id="Fruit">Fruit</p>
     <p class="category" id="Zuivel">Zuivel</p>
+    <p class="category" id="">Geen Categorie</p>
 </section>
 <section id="product-list" class="product-list">
 
