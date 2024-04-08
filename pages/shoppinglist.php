@@ -20,6 +20,7 @@
 <section class="page-image-section">
     <img class="page-image" src="../img/grocery.png" alt="shopping bag">
 </section>
+<h1 class="page-title"> Uw boodschappenlijst</h1>
 <section id="product-list" class="product-list">
 
 </section>

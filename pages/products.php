@@ -16,9 +16,11 @@
 <section class="header-image">
     <img src="../img/easyfind.png" alt="logo">
 </section>
+
 <section class="page-image-section">
     <img class="page-image" src="../img/grocery.png" alt="shopping bag">
 </section>
+<h1 class="page-title"> Selecteer uw producten</h1>
 <section id="category-list" class="category-list">
     <p class="category"  id="Fruit">Fruit</p>
     <p class="category" id="Zuivel">Zuivel</p>
