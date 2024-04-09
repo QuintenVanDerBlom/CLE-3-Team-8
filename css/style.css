@@ -247,3 +247,14 @@ section a:hover {
     background-color: #800080;
     color: #fff;
 }
+
+.video-navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 300px;
+    max-width: 320px;
+    height: 200px;
+}
