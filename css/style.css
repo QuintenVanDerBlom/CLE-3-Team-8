@@ -131,6 +131,7 @@ a:hover {
     color: purple; 
     text-decoration: underline; 
     font-size: 2em;;
+
 }
 
 
@@ -268,4 +269,9 @@ textarea {
     width: 300px;
     max-width: 320px;
     height: 200px;
+}
+
+input.productBox{
+    width: 50px;
+    height: 50px;
 }
