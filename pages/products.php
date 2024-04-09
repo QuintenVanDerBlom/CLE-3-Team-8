@@ -22,8 +22,15 @@
 </section>
 <h1 class="page-title"> Selecteer uw producten</h1>
 <section id="category-list" class="category-list">
-    <p class="category"  id="Fruit">Fruit</p>
-    <p class="category" id="Zuivel">Zuivel</p>
+    <p class="category"  id="Groenten">Groenten</p>
+    <p class="category" id="Fruit">Fruit</p>
+    <p class="category" id="Bakkerij">Bakkerij</p>
+    <p class="category" id="Vis">Vis</p>
+    <p class="category" id="Vlees">Vlees</p>
+    <p class="category" id="Diepvries">Diepvries</p>
+    <p class="category" id="Dranken">Dranken</p>
+    <p class="category" id="Snoep">Snoep</p>
+    <p class="category" id="Snacks">Snacks</p>
     <p class="category" id="">Geen Categorie</p>
 </section>
 <section id="product-list" class="product-list">
