@@ -18,19 +18,26 @@
     /* Example max-width for the container */
 }
 
-.productBox {}
+.productBox {
+    height: 10px;
+    width: 25px;
+}
 
 .product {
     min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 .category-list {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
 }
 
 #trashCan{
@@ -117,6 +124,7 @@
 }
 a{
     font-size:1.5em ;
+
 }
 a:hover {
     
@@ -174,7 +182,7 @@ body {
 }
 
 .header-image img {
-    width: 250px;
+    width: 400px;
     height: auto;
 }
 
@@ -199,12 +207,15 @@ body {
     margin: 15px auto;
     width: 500px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .product{
     padding: 10px;
     background-color: #f0f0f0;
     margin-right: 1px;
+    ;
+
 }
 
 /* Lijst aanpassen en navigatie links */
@@ -213,34 +224,35 @@ section {
     margin: 30px
 }
 
+
+
 section a {
     display: inline-block;
     text-decoration: none;
     color: #800080;
     font-weight: bold;
     padding: 20px 40px;
-    border: 1px solid #800080;
+    border: 3px solid #800080;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    margin: 20px;
-    margin-bottom: 30px;
 }
 
-section a:hover {
+    section a:hover {
     background-color: #800080;
     color: #fff;
 }
 
 .category{
+    display: inline-block;
     font-size: 25px;
     font-weight: bolder;
-    margin: 20px;
     border: 3px solid black;
     border-radius: 5px;
     padding: 5px;
     transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
-
 
 .category:hover{
     background-color: #800080;
