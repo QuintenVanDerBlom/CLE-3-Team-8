@@ -1,6 +1,6 @@
 window.addEventListener('load', init);
 
-const webAPI = 'https://quintenvanderblom.github.io/CLE-3-Team-8/services/webservice/index.php';
+const webAPI = 'https://stud.hosted.hr.nl/1076910/CLE3-Team8/services/webservice/index.php';
 let storeContainer;
 let storeData;
 
